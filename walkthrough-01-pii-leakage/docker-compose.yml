@@ -1,0 +1,15 @@
+services:
+  pii-lab:
+
+    build: .
+
+    container_name: pii-leakage-lab
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env.example
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

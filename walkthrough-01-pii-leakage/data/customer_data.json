@@ -1,0 +1,57 @@
+[
+  {
+    "customer_id": "CUST-1001",
+    "name": "Sarah Khan",
+    "email": "sarah.khan@example.com",
+    "phone": "+92-300-8888888",
+    "cnic": "35202-1234567-1",
+    "address": "Johar Town, Lahore",
+    "account_type": "Savings",
+    "balance": "PKR 1,250,000",
+    "last_transaction": "PKR 45,000 transferred to Ali Traders"
+  },
+  {
+    "customer_id": "CUST-1002",
+    "name": "Ahmed Raza",
+    "email": "ahmed.raza@example.com",
+    "phone": "+92-301-9999999",
+    "cnic": "37405-2345678-2",
+    "address": "F-10, Islamabad",
+    "account_type": "Current",
+    "balance": "PKR 2,850,000",
+    "last_transaction": "PKR 125,000 received from ABC Pvt Ltd"
+  },
+  {
+    "customer_id": "CUST-1003",
+    "name": "Fatima Noor",
+    "email": "fatima.noor@example.com",
+    "phone": "+92-302-1111111",
+    "cnic": "42101-3456789-3",
+    "address": "Gulshan-e-Iqbal, Karachi",
+    "account_type": "Savings",
+    "balance": "PKR 890,000",
+    "last_transaction": "ATM Cash Withdrawal - PKR 20,000"
+  },
+  {
+    "customer_id": "CUST-1004",
+    "name": "Usman Tariq",
+    "email": "usman.tariq@example.com",
+    "phone": "+92-303-2222222",
+    "cnic": "33100-4567890-4",
+    "address": "Satellite Town, Rawalpindi",
+    "account_type": "Business",
+    "balance": "PKR 6,450,000",
+    "last_transaction": "Business Invoice Payment - PKR 780,000"
+  },
+  {
+    "customer_id": "CUST-1005",
+    "name": "Ayesha Malik",
+    "email": "ayesha.malik@example.com",
+    "phone": "+92-304-5555555",
+    "cnic": "61101-5678901-5",
+    "address": "Cantt, Peshawar",
+    "account_type": "Savings",
+    "balance": "PKR 540,000",
+    "last_transaction": "Online Shopping - PKR 15,500"
+  }
+]
