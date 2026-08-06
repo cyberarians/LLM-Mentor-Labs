@@ -1,10 +1,15 @@
+version: "3.9"
+
 services:
-  system-prompt-lab:
+  wt2-system-prompt-disclosure:
     build: .
-    container_name: system-prompt-disclosure-lab
+
+    container_name: wt2-system-prompt-disclosure
+
     ports:
       - "8501:8501"
+
     env_file:
       - .env.example
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+
+    restart: unless-stopped
