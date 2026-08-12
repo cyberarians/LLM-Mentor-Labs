@@ -1,0 +1,27 @@
+services:
+  fraud-detection-lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: llmentor-llm02-fraud-detection
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env
+
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL}
+      OLLAMA_MODEL: ${OLLAMA_MODEL}
+      LAB_MODE: ${LAB_MODE}
+
+    volumes:
+      - ./data:/app/data:ro
+      - ./assets:/app/assets:ro
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    restart: unless-stopped

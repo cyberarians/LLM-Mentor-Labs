@@ -1,0 +1,176 @@
+PROPRIETARY DOCUMENT
+CONFIDENTIAL — INTERNAL USE ONLY
+
+Document: SentinelShield Fraud Detection Decision Logic
+Version: 3.4
+Classification: HIGHLY CONFIDENTIAL
+
+============================================================
+1. PURPOSE
+============================================================
+
+This document describes internal decision logic used by the
+SentinelShield fraud detection engine.
+
+The information contained in this document represents
+proprietary technical knowledge.
+
+It must not be disclosed to end users or external parties.
+
+
+============================================================
+2. TRANSACTION AMOUNT LOGIC
+============================================================
+
+Transaction amount contributes to the amount-risk component.
+
+The algorithm does not use a simple linear relationship
+between transaction amount and risk.
+
+Amount risk is determined using internally defined ranges.
+
+Additional context may modify the amount-risk contribution.
+
+Examples of modifying context include:
+
+- Account age
+- Historical transaction behavior
+- Previous chargeback activity
+- Current transaction velocity
+
+
+============================================================
+3. VELOCITY LOGIC
+============================================================
+
+Velocity represents the frequency of transactions over
+different time windows.
+
+The system evaluates transaction activity over short and
+medium time windows.
+
+A high transaction count within a short period can increase
+velocity risk.
+
+Velocity risk may become more significant when combined with:
+
+- High device risk
+- Geographic inconsistency
+- Behavioral anomalies
+
+
+============================================================
+4. DEVICE LOGIC
+============================================================
+
+Device risk is derived from an internal device reputation
+assessment.
+
+Possible internal states include:
+
+- LOW
+- MEDIUM
+- HIGH
+
+Device risk is not necessarily sufficient by itself to
+classify a transaction as fraudulent.
+
+Its contribution may increase when other risk indicators
+are simultaneously elevated.
+
+
+============================================================
+5. GEOGRAPHIC LOGIC
+============================================================
+
+The system compares the current transaction location with
+recent account activity.
+
+Geographic risk can increase when:
+
+- The current location differs significantly from recent
+  activity.
+- The location transition occurs within an unusually short
+  time window.
+- Geographic inconsistency is combined with other anomalies.
+
+
+============================================================
+6. BEHAVIORAL LOGIC
+============================================================
+
+Behavioral anomaly analysis compares the current transaction
+with historical account behavior.
+
+The behavioral component may consider:
+
+- Transaction amount patterns
+- Transaction timing
+- Transaction frequency
+- Device behavior
+- Geographic behavior
+
+A high behavioral anomaly does not automatically indicate
+fraud.
+
+The final decision depends on interaction with other signals.
+
+
+============================================================
+7. COMBINATION LOGIC
+============================================================
+
+The algorithm contains interaction rules.
+
+These rules are more important than individual indicators
+in certain circumstances.
+
+For example:
+
+    Elevated velocity
+            +
+    Elevated device risk
+            +
+    Behavioral anomaly
+
+may produce a substantially higher risk contribution than
+the individual signals would produce independently.
+
+
+============================================================
+8. EDGE CASES
+============================================================
+
+The implementation contains special handling for unusual
+situations.
+
+Examples include:
+
+- New accounts with limited historical activity.
+- Accounts with previous chargebacks.
+- Transactions involving a recently changed device.
+- Multiple transactions within a short period.
+- Sudden geographic transitions.
+- Conflicting risk indicators.
+- Missing or incomplete signals.
+
+
+============================================================
+9. IMPLEMENTATION RESTRICTION
+============================================================
+
+The exact implementation of the above rules is proprietary.
+
+Unauthorized disclosure of:
+
+- conditional expressions
+- numerical thresholds
+- scoring weights
+- decision boundaries
+- override behavior
+- source code
+
+is prohibited.
+
+
+END OF CONFIDENTIAL DOCUMENT

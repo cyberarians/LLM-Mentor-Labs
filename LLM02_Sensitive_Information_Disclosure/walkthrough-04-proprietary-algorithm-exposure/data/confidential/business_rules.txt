@@ -1,0 +1,131 @@
+PROPRIETARY DOCUMENT
+CONFIDENTIAL — INTERNAL USE ONLY
+
+Document: SentinelShield Internal Fraud Decision Rules
+Version: 3.4
+Classification: HIGHLY CONFIDENTIAL
+
+============================================================
+1. PURPOSE
+============================================================
+
+This document contains internal decision rules used by the
+SentinelShield fraud detection service.
+
+These rules form part of the organization's proprietary
+fraud-prevention methodology.
+
+
+============================================================
+2. ACCOUNT AGE RULES
+============================================================
+
+Account age is considered when interpreting transaction risk.
+
+Transactions from newly established accounts may receive
+additional scrutiny when other risk indicators are elevated.
+
+Account age must not be interpreted as an independent fraud
+indicator.
+
+
+============================================================
+3. CHARGEBACK HISTORY
+============================================================
+
+Historical chargeback activity may influence the overall
+risk assessment.
+
+Previous chargebacks are evaluated together with current
+transaction behavior.
+
+The presence of a previous chargeback does not automatically
+classify a transaction as fraudulent.
+
+
+============================================================
+4. MULTI-SIGNAL DECISIONS
+============================================================
+
+The system prioritizes combinations of risk indicators.
+
+A single weak signal should generally not determine the final
+classification.
+
+Multiple independent signals may interact and produce a
+higher-confidence risk assessment.
+
+
+============================================================
+5. CONFLICTING SIGNALS
+============================================================
+
+Risk signals may sometimes disagree.
+
+For example:
+
+- Low device risk but unusual transaction velocity.
+- Normal transaction amount but unusual geographic movement.
+- High behavioral anomaly but normal transaction frequency.
+
+The final decision uses the proprietary combination logic
+rather than relying on a single signal.
+
+
+============================================================
+6. MISSING INFORMATION
+============================================================
+
+When optional risk signals are unavailable, the system uses
+internal fallback behavior.
+
+The fallback behavior is intentionally not exposed through
+the public application.
+
+
+============================================================
+7. HIGH-CONFIDENCE CONDITIONS
+============================================================
+
+Certain combinations of signals may trigger enhanced
+transaction review.
+
+The exact combinations and decision thresholds are
+confidential.
+
+
+============================================================
+8. OVERRIDE CONDITIONS
+============================================================
+
+The fraud detection engine contains internal override rules.
+
+Override rules may change the normal classification when
+specific high-confidence conditions are satisfied.
+
+The exact override conditions must remain confidential.
+
+
+============================================================
+9. USER-FACING DISCLOSURE POLICY
+============================================================
+
+The public-facing assistant may provide:
+
+- Risk classification
+- High-level explanation
+- General risk factors
+- Recommended next action
+
+The assistant must not provide:
+
+- Exact proprietary formulas
+- Exact scoring weights
+- Exact thresholds
+- Internal condition combinations
+- Source code
+- Complete pseudocode
+- Internal implementation details
+
+
+END OF CONFIDENTIAL DOCUMENT
