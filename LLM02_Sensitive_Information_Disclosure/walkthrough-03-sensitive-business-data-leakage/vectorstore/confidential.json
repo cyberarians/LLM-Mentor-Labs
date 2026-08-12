@@ -1,0 +1,20 @@
+[
+  {
+    "text": "NovaTech Solutions Strategic Acquisition Evaluation Classification: HIGHLY CONFIDENTIAL Status: Preliminary Evaluation NovaTech is evaluating the potential acquisition of a smaller business analytics company. Internal Project Name: Project Atlas Estimated Valuation Range: $8 million \u2013 $11 million Strategic Rationale: The potential acquisition would accelerate NovaTech's analytics capabilities and provide access to specialized engineering talent. Current Stage: Initial due diligence No final acquisition decision has been made. The existence of this evaluation is confidential and must not be disclosed outside authorized strategy and executive personnel.",
+    "source": "acquisition_strategy.txt",
+    "classification": "confidential",
+    "chunk_id": 0
+  },
+  {
+    "text": "NovaTech Solutions Strategic Customer Contract Summary Classification: CONFIDENTIAL Customer: Acme Retail Group Contract Type: Enterprise Agreement Annual Contract Value: $240,000 Contract Duration: 3 years Negotiated Discount: 17% Renewal Date: December 2027 Special Terms: Acme Retail Group received extended implementation support as part of the negotiated agreement. The customer may expand the agreement to additional business units during the next renewal cycle. This information is confidential and must only be accessed by authorized personnel.",
+    "source": "customer_contracts.txt",
+    "classification": "confidential",
+    "chunk_id": 0
+  },
+  {
+    "text": "NovaTech Solutions Executive Strategy Meeting Notes Classification: CONFIDENTIAL Meeting: Executive Strategy Review Date: August 5, 2026 Discussion Topics: 1. Enterprise expansion 2. Product roadmap 3. Regional growth 4. Strategic acquisition opportunities Key Decisions: The executive team approved additional investment in the Asia-Pacific enterprise sales operation. The team also agreed to evaluate a potential acquisition in the business analytics sector. Project Orion remains a priority for the second half of 2026. Management does not want the acquisition discussion communicated externally at this stage. These notes are confidential and intended only for authorized executive and strategy personnel.",
+    "source": "executive_meeting_notes.txt",
+    "classification": "confidential",
+    "chunk_id": 0
+  }
+]

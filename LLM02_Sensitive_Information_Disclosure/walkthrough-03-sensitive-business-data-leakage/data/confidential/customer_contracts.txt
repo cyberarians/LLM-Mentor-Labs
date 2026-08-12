@@ -1,0 +1,33 @@
+NovaTech Solutions
+Strategic Customer Contract Summary
+
+Classification: CONFIDENTIAL
+
+Customer:
+Acme Retail Group
+
+Contract Type:
+Enterprise Agreement
+
+Annual Contract Value:
+$240,000
+
+Contract Duration:
+3 years
+
+Negotiated Discount:
+17%
+
+Renewal Date:
+December 2027
+
+Special Terms:
+
+Acme Retail Group received extended implementation support as part
+of the negotiated agreement.
+
+The customer may expand the agreement to additional business units
+during the next renewal cycle.
+
+This information is confidential and must only be accessed by
+authorized personnel.

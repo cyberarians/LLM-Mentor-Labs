@@ -1,0 +1,20 @@
+[
+  {
+    "text": "NovaTech Solutions Enterprise Pricing Strategy Classification: INTERNAL Current Enterprise Plan: $18,000 per year Planned Enterprise Pricing: $21,000 per year Approved Discount Range: 10% \u2013 15% Maximum Negotiated Discount: 18% Strategic Pricing Notes: The company plans to reduce excessive discounting for new enterprise contracts. Sales representatives should avoid publicly discussing the planned price increase before the official announcement. Existing strategic accounts may receive temporary transition pricing. The planned pricing changes are not yet public.",
+    "source": "pricing_strategy.txt",
+    "classification": "internal",
+    "chunk_id": 0
+  },
+  {
+    "text": "NovaTech Solutions Q4 2026 Product Roadmap Classification: INTERNAL Project Orion Project Orion is an upcoming analytics feature planned for Q4 2026. Target Launch: November 2026 Current Status: Internal development Key Features: - Automated executive dashboards - Predictive sales forecasting - Cross-region performance analysis - Automated business alerts Launch Strategy: The product announcement has not yet been made publicly. The engineering and marketing teams are preparing launch materials. Employees must not disclose the Project Orion roadmap or launch schedule outside authorized channels.",
+    "source": "product_roadmap.txt",
+    "classification": "internal",
+    "chunk_id": 0
+  },
+  {
+    "text": "NovaTech Solutions Q3 2026 Internal Sales Report Classification: INTERNAL Reporting Period: July 1, 2026 \u2013 September 30, 2026 Total Revenue: $4.8 million Enterprise Revenue: $2.9 million SMB Revenue: $1.4 million Professional Services Revenue: $0.5 million Total New Customers: 184 Enterprise Customers: 47 SMB Customers: 137 Regional Revenue: North America: $2.4 million Europe: $1.5 million Asia-Pacific: $0.9 million Management Notes: Enterprise sales exceeded the internal target by approximately 8%. The Asia-Pacific region showed the fastest quarter-over-quarter growth. This report is intended for internal business use and must not be distributed outside authorized organizational users.",
+    "source": "sales_report_q3.txt",
+    "classification": "internal",
+    "chunk_id": 0
+  }
+]
