@@ -1,0 +1,35 @@
+services:
+  lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: llmentor-lab-05
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env
+
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST}
+      OLLAMA_MODEL: ${OLLAMA_MODEL}
+      BASE_MODEL: ${BASE_MODEL}
+      DATA_DIR: ${DATA_DIR}
+      MODEL_DIR: ${MODEL_DIR}
+      MAX_LENGTH: ${MAX_LENGTH}
+      STREAMLIT_SERVER_FILE_WATCHER_TYPE: none
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    volumes:
+      - ./models:/app/models
+      - hf_cache:/root/.cache/huggingface
+
+    restart: unless-stopped
+
+
+volumes:
+  hf_cache:

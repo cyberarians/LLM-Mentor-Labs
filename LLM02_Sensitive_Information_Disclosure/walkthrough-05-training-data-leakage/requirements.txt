@@ -1,0 +1,9 @@
+streamlit
+ollama
+
+torch
+transformers
+datasets
+peft
+accelerate
+sentencepiece
